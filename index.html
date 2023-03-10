@@ -1,7 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mechanical Engineer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+  <header>
+    <h1>John Doe</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <img src="profile-pic.jpg" alt="Profile Picture">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus ullamcorper felis, nec dignissim orci. </p>
+    </section>
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <img src="project-pic1.jpg" alt="Project 1">
+        <h3>Project 1</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus ullamcorper felis, nec dignissim orci. </p>
+      </div>
+      <div class="project">
+        <img src="project-pic2.jpg" alt="Project 2">
+        <h3>Project 2</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla rhoncus ullamcorper felis, nec dignissim orci. </p>
+      </div>
+    </section>
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2023 John Doe</p>
+  </footer>
 </body>
 </html>
