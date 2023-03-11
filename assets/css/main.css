@@ -1523,7 +1523,7 @@ input, select, textarea {
 		-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-		-webkit-appearance: none;
+		webkit-appearance: none;
 		display: block;
 		border: 0;
 		padding: 0.75em;
@@ -1930,6 +1930,18 @@ input, select, textarea {
 		}
 
 		.box.style2 .image {
+			position: relative;
+			left: 2em;
+			top: 2em;
+			margin: -4em 0 4em -4em;
+			width: auto;
+		}
+
+		.box.style3 h3 {
+			margin-bottom: auto;
+		}
+
+		.box.style3 .image {
 			position: relative;
 			left: 2em;
 			top: 2em;
