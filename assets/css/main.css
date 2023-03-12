@@ -16,7 +16,7 @@ u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
 tfoot, thead, tr, th, td, article, aside,
 canvas, details, embed, figure, figcaption,
-footer, header, hgroup, menu, nav, output, ruby,
+footer, header, hgroup, menu, nav, output, ruby, pdfViewer, 
 section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
@@ -1260,6 +1260,7 @@ input, select, textarea {
 
 		}
 
+
 		@media screen and (max-width: 736px) {
 
 			.row {
@@ -1523,7 +1524,6 @@ input, select, textarea {
 		-webkit-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		-ms-transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
 		transition: background .2s ease-in-out, box-shadow .2s ease-in-out;
-		webkit-appearance: none;
 		display: block;
 		border: 0;
 		padding: 0.75em;
@@ -1685,7 +1685,6 @@ input, select, textarea {
 		-webkit-transition: background-color .2s ease-in-out;
 		-ms-transition: background-color .2s ease-in-out;
 		transition: background-color .2s ease-in-out;
-		-webkit-appearance: none;
 		position: relative;
 		display: inline-block;
 		color: #fff !important;
@@ -2058,69 +2057,80 @@ input, select, textarea {
 				}
 
 /* Nav */
+#nav {
+	background-color: #282828;
+	text-align: center;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 10000;
+	cursor: default;
+	height: 3.5em;
+	line-height: 3.5em;
+}
 
-	#nav {
-		background-color: #282828;
-		text-align: center;
-		position: fixed;
-		left: 0;
-		top: 0;
-		width: 100%;
-		z-index: 10000;
-		cursor: default;
-		height: 3.5em;
-		line-height: 3.5em;
+	#nav ul {
+		margin-bottom: 0;
+		list-style: none;
+		padding-left: 0;
 	}
 
-		#nav ul {
+		#nav ul ul {
 			margin-bottom: 0;
 			list-style: none;
 			padding-left: 0;
 		}
-
-		#nav li {
-			display: inline-block;
-			padding-left: 0;
-		}
-
-		#nav a {
-			-moz-transition: background-color .2s ease-in-out;
-			-webkit-transition: background-color .2s ease-in-out;
-			-ms-transition: background-color .2s ease-in-out;
-			transition: background-color .2s ease-in-out;
-			position: relative;
-			display: block;
-			color: #fff;
-			text-decoration: none;
-			outline: 0;
-			font-weight: 600;
-			border-radius: 8px;
-			color: #fff;
-			height: 2.5em;
-			line-height: 2.5em;
-			padding: 0 1.25em;
-		}
-
-			#nav a:hover {
+	  
+			#nav ul li:hover > ul {
 				color: #fff !important;
 				background: #383838;
 			}
 
-			#nav a.active {
-				background: #484848;
+	#nav li {
+		display: inline-block;
+		padding-left: 0;
+	}
+
+	#nav a {
+		-moz-transition: background-color .2s ease-in-out;
+		-webkit-transition: background-color .2s ease-in-out;
+		-ms-transition: background-color .2s ease-in-out;
+		transition: background-color .2s ease-in-out;
+		position: relative;
+		display: block;
+		color: #fff;
+		text-decoration: none;
+		outline: 0;
+		font-weight: 600;
+		border-radius: 8px;
+		color: #fff;
+		height: 2.5em;
+		line-height: 2.5em;
+		padding: 0 1.25em;
+	}
+
+		#nav a:hover {
+			color: #fff !important;
+			background: #383838;
+		}
+
+		#nav a.active {
+			background: #00eeff;
+		}
+
+			#nav a.active:before {
+				content: '';
+				display: block;
+				position: absolute;
+				bottom: -0.6em;
+				left: 50%;
+				margin-left: -0.75em;
+				border-left: solid 0.75em transparent;
+				border-right: solid 0.75em transparent;
+				border-top: solid 0.6em #282828;
 			}
 
-				#nav a.active:before {
-					content: '';
-					display: block;
-					position: absolute;
-					bottom: -0.6em;
-					left: 50%;
-					margin-left: -0.75em;
-					border-left: solid 0.75em transparent;
-					border-right: solid 0.75em transparent;
-					border-top: solid 0.6em #282828;
-				}
 
 /* Articles */
 
