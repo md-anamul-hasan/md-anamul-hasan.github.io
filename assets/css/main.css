@@ -1658,6 +1658,18 @@ input, select, textarea {
 				width: auto;
 			}
 
+		.image-grid {
+			display: grid;
+			grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+			grid-gap: 25px;
+		  }
+		
+		  .image-grid img {
+			width: 100%;
+			height: auto;
+			display: block;
+		  }
+
 /* Button */
 
 	input[type="button"],
