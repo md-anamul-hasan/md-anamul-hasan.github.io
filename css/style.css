@@ -628,10 +628,15 @@ h6 { font-size: 16px; }
 	top: 20px;
 	left: 150px;
 }
-.dizme_tm_hero .skills.premiere{
-	
+.dizme_tm_hero .skills.sw{
+	background-color: #ffffff;
 	top: 220px;
 	left: -30px;
+}
+.dizme_tm_hero .skills.nx{
+	background-color: #ffffff;
+	bottom: 60px;
+	left: 140px;
 }
 .dizme_tm_hero .skills.photoshop{
 	background-color: #001631;
@@ -639,7 +644,7 @@ h6 { font-size: 16px; }
 	top: 80px;
 }
 .dizme_tm_hero .skills.figma{
-	background-color: #fff;
+	background-color: #ffffff;
 	bottom: 60px;
 	left: 140px;
 }
