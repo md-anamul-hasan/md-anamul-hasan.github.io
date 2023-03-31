@@ -630,13 +630,33 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_hero .skills.dss-solidworks{
 	background-color: #ffffff;
-	top: 10px;
-	left: 20px;
+	top: 200px;
+	left: 150px;
 }
-.dizme_tm_hero .skills.siemens-nx{
+.dizme_tm_hero .skills.p1-1{
+	background-color: #ffffff;
+	right: 200px;
+	top: 150px;
+}
+.dizme_tm_hero .skills.p1-2{
+	background-color: #ffffff;
+	right: 70px;
+	top: 75px;
+}
+.dizme_tm_hero .skills.p1-3{
+	background-color: #ffffff;
+	bottom: 60px;
+	left: 280px;
+}
+.dizme_tm_hero .skills.p1-4{
 	background-color: #ffffff;
 	right: 70px;
 	top: 80px;
+}
+.dizme_tm_hero .skills.p1-5{
+	background-color: #ffffff;
+	bottom: 60px;
+	left: 140px;
 }
 .dizme_tm_hero .skills.photoshop{
 	background-color: #001631;
