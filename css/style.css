@@ -625,23 +625,23 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_hero .skills.illustrator{
 	background-color: #390000;
-	top: 20px;
+	top: 200px;
 	left: 150px;
 }
-.dizme_tm_hero .skills.sw{
+.dizme_tm_hero .skills.dss-solidworks{
 	background-color: #ffffff;
-	top: 220px;
-	left: -30px;
+	top: 10px;
+	left: 20px;
 }
-.dizme_tm_hero .skills.nx{
+.dizme_tm_hero .skills.siemens-nx{
 	background-color: #ffffff;
-	bottom: 60px;
-	left: 140px;
+	top: 50px;
+	right: 80px;
 }
 .dizme_tm_hero .skills.photoshop{
 	background-color: #001631;
-	right: 70px;
-	top: 80px;
+	right: 10px;
+	top: 200px;
 }
 .dizme_tm_hero .skills.figma{
 	background-color: #ffffff;
