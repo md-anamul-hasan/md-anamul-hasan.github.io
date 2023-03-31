@@ -635,28 +635,38 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_hero .skills.p1-1{
 	background-color: #ffffff;
-	right: 200px;
-	top: 150px;
+	left: 30px;
+	top: 30px;
 }
 .dizme_tm_hero .skills.p1-2{
 	background-color: #ffffff;
-	right: 70px;
-	top: 75px;
+	left: 30px;
+	top: 180px;
 }
 .dizme_tm_hero .skills.p1-3{
 	background-color: #ffffff;
-	bottom: 60px;
-	left: 280px;
+	bottom: 30px;
+	left: 30px;
 }
 .dizme_tm_hero .skills.p1-4{
 	background-color: #ffffff;
-	right: 70px;
-	top: 80px;
+	left: 150px;
+	bottom: 30px;
 }
 .dizme_tm_hero .skills.p1-5{
 	background-color: #ffffff;
-	bottom: 60px;
-	left: 140px;
+	bottom: 30px;
+	right: 30px;
+}
+.dizme_tm_hero .skills.p1-6{
+	background-color: #ffffff;
+	bottom: 180px;
+	right: 30px;
+}
+.dizme_tm_hero .skills.p1-7{
+	background-color: #ffffff;
+	top: 30px;
+	right: 30px;
 }
 .dizme_tm_hero .skills.photoshop{
 	background-color: #001631;
