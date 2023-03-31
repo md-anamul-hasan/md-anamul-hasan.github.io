@@ -635,28 +635,28 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_hero .skills.p1-1{
 	background-color: #ffffff;
-	left: 30px;
-	top: 30px;
+	left: 150px;
+	bottom: 50px;
 }
 .dizme_tm_hero .skills.p1-2{
 	background-color: #ffffff;
 	left: 30px;
-	top: 180px;
+	top: 250px;
 }
 .dizme_tm_hero .skills.p1-3{
 	background-color: #ffffff;
-	bottom: 30px;
-	left: 30px;
+	top: 250px;
+	right: 30px;
 }
 .dizme_tm_hero .skills.p1-4{
 	background-color: #ffffff;
-	left: 150px;
-	bottom: 30px;
+	left: 0px;
+	top: 400px;
 }
 .dizme_tm_hero .skills.p1-5{
 	background-color: #ffffff;
-	bottom: 30px;
-	right: 30px;
+	bottom: 0px;
+	right: 80px;
 }
 .dizme_tm_hero .skills.p1-6{
 	background-color: #ffffff;
