@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="svg3140" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 501.6 501" style="enable-background:new 0 0 501.6 501;" xml:space="preserve">
+<style type="text/css">
+	
+		.st0{fill-rule:evenodd;clip-rule:evenodd;fill:url(#rect3663_00000174583934996066397080000005041622450692991387_);stroke:#370700;stroke-width:1.62;stroke-miterlimit:3.4;}
+	
+		.st1{fill-rule:evenodd;clip-rule:evenodd;fill:url(#path3659_00000013898678560779197000000004324715290826545340_);stroke:#000137;stroke-width:1.62;stroke-miterlimit:3.4;}
+	.st2{fill:none;}
+</style>
+<g id="layer1">
+	<g id="g3813">
+		
+			<radialGradient id="rect3663_00000013901127990553889940000018212502271793730201_" cx="703.8628" cy="192.0282" r="176.98" gradientTransform="matrix(0.95 0.23 0.64 -2.62 -625.58 526.6)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#FF6D0F"/>
+			<stop  offset="1" style="stop-color:#FF1000"/>
+		</radialGradient>
+		
+			<path id="rect3663" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#rect3663_00000013901127990553889940000018212502271793730201_);stroke:#370700;stroke-width:1.62;stroke-miterlimit:3.4;" d="
+			M0.8,17v426.9H96V276.8h67.3V211H96v-71.1h165.8V17.2L0.8,17z"/>
+		
+			<radialGradient id="path3659_00000062160994793141451950000009177843323217468598_" cx="1323.9296" cy="422.7509" r="176.98" gradientTransform="matrix(0.53 0.82 0.88 -0.56 -811.13 -605.78)" gradientUnits="userSpaceOnUse">
+			<stop  offset="0" style="stop-color:#71B2F8"/>
+			<stop  offset="1" style="stop-color:#002795"/>
+		</radialGradient>
+		
+			<path id="path3659" style="fill-rule:evenodd;clip-rule:evenodd;fill:url(#path3659_00000062160994793141451950000009177843323217468598_);stroke:#000137;stroke-width:1.62;stroke-miterlimit:3.4;" d="
+			M424.6,144.3L369.3,176l-24.5-8.5l-23.3-59.6l-36.7,1.9L268,171.5l-23.4,11.2l-58.4-25.5l-24.8,27.3l31.8,55.3l-8.7,24.4
+			l-59.6,23.4l2.1,36.7l61.6,16.7l11.2,23.5L174,422.8l27.4,24.7l55.3-31.8l24.6,8.7l23.1,59.5l36.9-2.1l16.5-61.7l23.4-11.2
+			l58.5,25.8l24.7-27.4L432.8,352l8.5-24.6l59.5-23.2l-1.8-36.8l-61.7-16.5l-10.9-23.4l25.6-58.6L424.6,144.3z M341.6,235l11.4,6.6
+			l9.8,8.9l7.9,10.6l5.7,11.8l3.3,12.8l0.5,13.1l-1.9,13.1l-4.3,12.4l-6.8,11.5l-8.7,9.7l-10.6,7.9l-11.8,5.7l-12.8,3.3l-13.1,0.8
+			l-13.1-1.9l-12.4-4.3l-11.5-6.9l-9.6-8.8l-8-10.5l-5.7-11.8l-3.3-13l-0.7-13.1l1.9-13.1l4.3-12.4l6.8-11.3l8.7-9.9l10.7-7.9
+			l11.8-5.7l13-3.3l13.1-0.6l13.1,1.9L341.6,235z"/>
+	</g>
+</g>
+<rect x="0.8" y="0.5" class="st2" width="500" height="500"/>
+</svg>
