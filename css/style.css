@@ -709,6 +709,31 @@ h6 { font-size: 16px; }
 	right: 0px;
 	top: 90px;
 }
+.dizme_tm_hero .skills.s1-4{
+	background-color: #ffffff88;
+	right: 90px;
+	top: 90px;
+}
+.dizme_tm_hero .skills.s1-5{
+	background-color: #ffffff88;
+	right: 0px;
+	top: 180px;
+}
+.dizme_tm_hero .skills.s1-6{
+	background-color: #ffffff88;
+	right: 90px;
+	top: 180px;
+}
+.dizme_tm_hero .skills.s1-7{
+	background-color: #ffffff88;
+	right: 0px;
+	top: 270px;
+}
+.dizme_tm_hero .skills.s1-8{
+	background-color: #ffffff88;
+	right: 90px;
+	top: 270px;
+}
 .dizme_tm_hero .skills.photoshop{
 	background-color: #001631;
 	bottom: 60px;
