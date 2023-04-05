@@ -609,6 +609,7 @@ h6 { font-size: 16px; }
 	position: relative;
 }
 .dizme_tm_hero .avatar{
+	position: relative;
 	width: 50%;
 	padding-left: 100px;
 }
@@ -660,36 +661,56 @@ h6 { font-size: 16px; }
 }
 .dizme_tm_hero .skills.p1-6{
 	background-color: #ffffff88;
-	right: 20px;
-	bottom: 0px;
+	left: 470px;
+	bottom: 90px;
 }
 .dizme_tm_hero .skills.p1-7{
 	background-color: #ffffff88;
-	right: 110px;
+	left: 20px;
 	bottom: 0px;
 }
 .dizme_tm_hero .skills.p1-8{
 	background-color: #ffffff88;
-	right: 200px;
+	left: 110px;
 	bottom: 0px;
 }
 .dizme_tm_hero .skills.p1-9{
 	background-color: #ffffff88;
-	right: 290px;
+	left: 200px;
 	bottom: 0px;
 }
 .dizme_tm_hero .skills.p1-10{
 	background-color: #ffffff88;
-	right: 380px;
+	left: 290px;
 	bottom: 0px;
+}
+.dizme_tm_hero .skills.p1-11{
+	background-color: #ffffff88;
+	left: 380px;
+	bottom: 0px;
+}
+.dizme_tm_hero .skills.p1-12{
+	background-color: #ffffff88;
+	left: 470px;
+	bottom: 0px;
+}
+.dizme_tm_hero .skills.s1-1{
+	background-color: #ffffff88;
+	right: 0px;
+	top: 0px;
+}
+.dizme_tm_hero .skills.s1-2{
+	background-color: #ffffff88;
+	right: 90px;
+	top: 0px;
+}
+.dizme_tm_hero .skills.s1-3{
+	background-color: #ffffff88;
+	right: 0px;
+	top: 90px;
 }
 .dizme_tm_hero .skills.photoshop{
 	background-color: #001631;
-	bottom: 60px;
-	left: 140px;
-}
-.dizme_tm_hero .skills.figma{
-	background-color: #ffffff;
 	bottom: 60px;
 	left: 140px;
 }
