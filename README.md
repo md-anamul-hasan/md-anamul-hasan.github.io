@@ -6,6 +6,6 @@ My approach to problem-solving is driven by innovative thinking, which has yield
 
 In addition to my BSc in Mechanical Engineering, I am continuously expanding my skill set by delving into Python and machine learning to enhance my analytical abilities. I am also an avid enthusiast of electronic gadgets, and my curiosity for mechanisms fuels my passion for the field.
 
-You can find me on LinkedIn at [[Md Anamul Hasan](https://www.linkedin.com/in/md-anamul-hasan/)] and explore more about me on my website at [[Md Anamul Hasan](https://md-anamul-hasan.github.io/)].
+You can find me on LinkedIn at [[Md Anamul Hasan](https://www.linkedin.com/in/md-anamul-hasan/)] and explore more about me on my website at [[Md Anamul Hasan](https://www.mdanamulhasan.com/)].
 
 Thank you for your time, and I look forward to connecting with you!
