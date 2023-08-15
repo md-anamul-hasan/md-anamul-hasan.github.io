@@ -727,6 +727,67 @@ h6 {
     color: #00a9ff
 }
 
+.dizme_tm_hero .skills.p1-1{
+	background-color: #ffffff88;
+	left: 20px;
+	bottom: 90px;
+}
+.dizme_tm_hero .skills.p1-2{
+	background-color: #ffffff88;
+	left: 110px;
+	bottom: 90px;
+}
+.dizme_tm_hero .skills.p1-3{
+	background-color: #ffffff88;
+	left: 200px;
+	bottom: 90px;
+}
+.dizme_tm_hero .skills.p1-4{
+	background-color: #ffffff88;
+	left: 290px;
+	bottom: 90px;
+}
+.dizme_tm_hero .skills.p1-5{
+	background-color: #ffffff88; 
+	left: 380px;
+	bottom: 90px;
+}
+.dizme_tm_hero .skills.p1-6{
+	background-color: #ffffff88;
+	left: 470px;
+	bottom: 90px;
+}
+.dizme_tm_hero .skills.p1-7{
+	background-color: #ffffff88;
+	left: 20px;
+	bottom: 0px;
+}
+.dizme_tm_hero .skills.p1-8{
+	background-color: #ffffff88;
+	left: 110px;
+	bottom: 0px;
+}
+.dizme_tm_hero .skills.p1-9{
+	background-color: #ffffff88;
+	left: 200px;
+	bottom: 0px;
+}
+.dizme_tm_hero .skills.p1-10{
+	background-color: #ffffff88;
+	left: 290px;
+	bottom: 0px;
+}
+.dizme_tm_hero .skills.p1-11{
+	background-color: #ffffff88;
+	left: 380px;
+	bottom: 0px;
+}
+.dizme_tm_hero .skills.p1-12{
+	background-color: #ffffff88;
+	left: 470px;
+	bottom: 0px;
+}
+
 .dizme_tm_down {
     position: absolute;
     left: 50%;
