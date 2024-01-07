@@ -2335,7 +2335,7 @@ h6 {
     padding-top: 2px;
     float: left;
     padding-left: 2px;
-    min-width: calc(100% + 12px)
+    min-width: calc(100% + 12px);
 }
 
 .dizme_tm_certifications ul li {
