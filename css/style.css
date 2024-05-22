@@ -382,7 +382,7 @@ h6 {
 .dizme_tm_copyright .right ul,
 .dizme_tm_hero .social ul,
 .dizme_tm_mobile_menu .dropdown .dropdown_inner ul,
-.dizme_tm_modalbox .main_details .detailbox > ul,
+.dizme_tm_modalbox .main_details .detailbox>ul,
 .dizme_tm_portfolio .portfolio_filter ul,
 .dizme_tm_testimonials ul {
   margin: 0;
@@ -1445,7 +1445,7 @@ h6 {
 }
 
 .dizme_tm_contact .left ul li:last-child,
-.dizme_tm_modalbox .main_details .detailbox > ul > li:last-child,
+.dizme_tm_modalbox .main_details .detailbox>ul>li:last-child,
 .dizme_tm_modalbox .main_details .textbox p:last-child,
 .dizme_tm_modalbox .news_popup_informations .text p:last-child,
 .dizme_tm_modalbox .service_popup_informations .descriptions p:last-child,
@@ -1458,7 +1458,7 @@ h6 {
   padding-left: 40px;
 }
 
-.dizme_tm_modalbox .main_details .detailbox > ul > li {
+.dizme_tm_modalbox .main_details .detailbox>ul>li {
   margin: 0 0 10px;
   width: 100%;
   float: left;
@@ -1536,7 +1536,7 @@ h6 {
   margin-bottom: 22px;
 }
 
-.progress_inner > span {
+.progress_inner>span {
   margin: 0 0 9px;
   display: block;
   text-align: left;
@@ -1919,7 +1919,7 @@ h6 {
   right: -5px;
 }
 
-.dizme_tm_testimonials .owl-theme .owl-nav.disabled + .owl-dots {
+.dizme_tm_testimonials .owl-theme .owl-nav.disabled+.owl-dots {
   top: -5px;
   bottom: -5px;
   left: -5px;
@@ -2785,6 +2785,7 @@ input[type="number"] {
 }
 
 @media (max-width: 1600px) {
+
   .dizme_tm_hero .text p,
   body {
     font-size: 16px;
@@ -3424,7 +3425,7 @@ input[type="number"] {
     margin-bottom: 127px;
   }
 
-  .dizme_tm_testimonials .owl-theme .owl-nav.disabled + .owl-dots {
+  .dizme_tm_testimonials .owl-theme .owl-nav.disabled+.owl-dots {
     margin-top: 50px;
   }
 
