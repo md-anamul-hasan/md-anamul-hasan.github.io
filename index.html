@@ -23,14 +23,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
-
-  <script src="https://www.google.com/recaptcha/api.js"></script>
-    <script>
-        function onSubmit() {
-            document.getElementById("contactForm").submit()
-        }
-    </script>
-
 </head>
 
 <body>
@@ -1220,10 +1212,7 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <!--<button class="form-btn" type="submit" disabled data-form-btn>-->
-              <button class="g-recaptcha" data-sitekey="6LfT5jwqAAAAADwbf-yjhrLXmq0KqMikNWgXKUxb"
-            data-callback='onSubmit' data-action='submit'>
-
+            <button class="form-btn" type="submit" disabled data-form-btn>
               <ion-icon name="play-outline"></ion-icon>
               <span>Send</span>
             </button>
