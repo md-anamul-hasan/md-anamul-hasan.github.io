@@ -648,6 +648,7 @@ main {
   overflow: hidden;
 }
 
+
 /**
  * #testimonials-modal
  */
@@ -1433,6 +1434,7 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 120px;
+    border-radius: 30px;
   }
 
   .info-content .name {
@@ -1543,6 +1545,7 @@ textarea.form-input::-webkit-resizer {
 
   .testimonials-avatar-box img {
     width: 80px;
+    border-radius: 20px;
   }
 
   .testimonials-item-title {
@@ -1583,6 +1586,7 @@ textarea.form-input::-webkit-resizer {
 
   .modal-avatar-box img {
     width: 65px;
+    border-radius: 18px;
   }
 
   .modal-img-wrapper > img {
@@ -1723,6 +1727,7 @@ textarea.form-input::-webkit-resizer {
 
   .modal-avatar-box img {
     width: 80px;
+    border-radius: 14px;
   }
 
   /**
@@ -1974,6 +1979,7 @@ textarea.form-input::-webkit-resizer {
 
   .avatar-box img {
     width: 150px;
+    border-radius: 20px
   }
 
   .info-content .name {
