@@ -23,6 +23,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script>
+        function onSubmit() {
+            document.getElementById("contactForm").submit()
+        }
+    </script>
+
 </head>
 
 <body>
@@ -1202,7 +1210,7 @@
         <section class="contact-form">
           <h3 class="h3 form-title">Contact Form</h3>
 
-          <form action="https://formspree.io/f/manwkrew" method="POST" class="form" data-form>
+          <form action="https://formspree.io/f/manwkrew" id="contactForm" method="POST" class="form" data-form>
             <div class="input-wrapper">
               <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input />
 
@@ -1212,7 +1220,10 @@
 
             <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
 
-            <button class="form-btn" type="submit" disabled data-form-btn>
+            <!--<button class="form-btn" type="submit" disabled data-form-btn>-->
+              <button class="g-recaptcha" data-sitekey="6LfT5jwqAAAAADwbf-yjhrLXmq0KqMikNWgXKUxb"
+            data-callback='onSubmit' data-action='submit'>
+
               <ion-icon name="play-outline"></ion-icon>
               <span>Send</span>
             </button>
