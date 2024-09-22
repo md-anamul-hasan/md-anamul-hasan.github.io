@@ -17,38 +17,26 @@
 
   /* gradient */
 
-  --bg-gradient-onyx: linear-gradient(
-    to bottom right,
-    hsl(240, 1%, 25%) 3%,
-    hsl(0, 0%, 19%) 97%
-  );
-  --bg-gradient-jet: linear-gradient(
-      to bottom right,
+  --bg-gradient-onyx: linear-gradient(to bottom right,
+      hsl(240, 1%, 25%) 3%,
+      hsl(0, 0%, 19%) 97%);
+  --bg-gradient-jet: linear-gradient(to bottom right,
       hsla(240, 1%, 18%, 0.251) 0%,
-      hsla(240, 2%, 11%, 0) 100%
-    ),
+      hsla(240, 2%, 11%, 0) 100%),
     hsl(240, 2%, 13%);
-  --bg-gradient-yellow-1: linear-gradient(
-    to bottom right,
-    hsl(45, 100%, 71%) 0%,
-    hsla(36, 100%, 69%, 0) 50%
-  );
-  --bg-gradient-yellow-2: linear-gradient(
-      135deg,
+  --bg-gradient-yellow-1: linear-gradient(to bottom right,
+      hsl(45, 100%, 71%) 0%,
+      hsla(36, 100%, 69%, 0) 50%);
+  --bg-gradient-yellow-2: linear-gradient(135deg,
       hsla(45, 100%, 71%, 0.251) 0%,
-      hsla(35, 100%, 68%, 0) 59.86%
-    ),
+      hsla(35, 100%, 68%, 0) 59.86%),
     hsl(240, 2%, 13%);
-  --border-gradient-onyx: linear-gradient(
-    to bottom right,
-    hsl(0, 0%, 25%) 0%,
-    hsla(0, 0%, 25%, 0) 50%
-  );
-  --text-gradient-yellow: linear-gradient(
-    to right,
-    hsl(45, 100%, 72%),
-    hsl(35, 100%, 68%)
-  );
+  --border-gradient-onyx: linear-gradient(to bottom right,
+      hsl(0, 0%, 25%) 0%,
+      hsla(0, 0%, 25%, 0) 50%);
+  --text-gradient-yellow: linear-gradient(to right,
+      hsl(45, 100%, 72%),
+      hsl(35, 100%, 68%));
 
   /* solid */
 
@@ -752,7 +740,7 @@ main {
   box-shadow: var(--shadow-2);
 }
 
-.modal-img-wrapper > img {
+.modal-img-wrapper>img {
   display: none;
 }
 
@@ -931,6 +919,121 @@ main {
 }
 
 /*-----------------------------------*\
+  #CERTIFICATIONS & AWARDS
+\*-----------------------------------*/
+
+.certifications-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+  margin-bottom: 10px;
+}
+
+.certifications-item {
+  display: none;
+}
+
+.certifications-item.active {
+  display: block;
+  animation: scaleUp 0.25s ease forwards;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0.5);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.certifications-item>a {
+  width: 100%;
+}
+
+.certifications-img {
+  position: relative;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.certifications-img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.certifications-item>a:hover .certifications-img::before {
+  background: hsla(0, 0%, 0%, 0.5);
+}
+
+.certifications-item-icon-box {
+  --scale: 0.8;
+
+  background: var(--jet);
+  color: var(--orange-yellow-crayola);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(var(--scale));
+  font-size: 20px;
+  padding: 18px;
+  border-radius: 12px;
+  opacity: 0;
+  z-index: 1;
+  transition: var(--transition-1);
+}
+
+.certifications-item>a:hover .certifications-item-icon-box {
+  --scale: 1;
+  opacity: 1;
+}
+
+.certifications-item-icon-box ion-icon {
+  --ionicon-stroke-width: 50px;
+}
+
+.certifications-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transition-1);
+}
+
+.certifications-item>a:hover img {
+  transform: scale(1.1);
+}
+
+.certifications-title,
+.certifications-category {
+  margin-left: 10px;
+}
+
+.certifications-title {
+  color: var(--white-2);
+  font-size: var(--fs-5);
+  font-weight: var(--fw-400);
+  text-transform: capitalize;
+  line-height: 1.3;
+}
+
+.certifications-category {
+  color: var(--light-gray-70);
+  font-size: var(--fs-6);
+  font-weight: var(--fw-300);
+}
+
+/*-----------------------------------*\
   #PORTFOLIO
 \*-----------------------------------*/
 
@@ -976,7 +1079,7 @@ main {
   transition: 0.15s ease-in-out;
 }
 
-.filter-select.active + .select-list {
+.filter-select.active+.select-list {
   opacity: 1;
   visibility: visible;
   pointer-events: all;
@@ -1023,7 +1126,7 @@ main {
   }
 }
 
-.project-item > a {
+.project-item>a {
   width: 100%;
 }
 
@@ -1048,7 +1151,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-img::before {
+.project-item>a:hover .project-img::before {
   background: hsla(0, 0%, 0%, 0.5);
 }
 
@@ -1069,7 +1172,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover .project-item-icon-box {
+.project-item>a:hover .project-item-icon-box {
   --scale: 1;
   opacity: 1;
 }
@@ -1085,7 +1188,7 @@ main {
   transition: var(--transition-1);
 }
 
-.project-item > a:hover img {
+.project-item>a:hover img {
   transform: scale(1.1);
 }
 
@@ -1122,7 +1225,7 @@ main {
   gap: 20px;
 }
 
-.blog-post-item > a {
+.blog-post-item>a {
   position: relative;
   background: var(--border-gradient-onyx);
   height: 100%;
@@ -1131,7 +1234,7 @@ main {
   z-index: 1;
 }
 
-.blog-post-item > a::before {
+.blog-post-item>a::before {
   content: "";
   position: absolute;
   inset: 1px;
@@ -1154,7 +1257,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-banner-box img {
+.blog-post-item>a:hover .blog-banner-box img {
   transform: scale(1.1);
 }
 
@@ -1189,7 +1292,7 @@ main {
   transition: var(--transition-1);
 }
 
-.blog-post-item > a:hover .blog-item-title {
+.blog-post-item>a:hover .blog-item-title {
   color: var(--orange-yellow-crayola);
 }
 
@@ -1348,6 +1451,7 @@ textarea.form-input::-webkit-resizer {
    * #PORTFOLIO, BLOG 
    */
 
+  .certifications-img,
   .project-img,
   .blog-banner-box {
     height: auto;
@@ -1592,7 +1696,7 @@ textarea.form-input::-webkit-resizer {
     border-radius: 18px;
   }
 
-  .modal-img-wrapper > img {
+  .modal-img-wrapper>img {
     display: block;
     flex-grow: 1;
     width: 35px;
@@ -1636,6 +1740,10 @@ textarea.form-input::-webkit-resizer {
   /**
    * #PORTFOLIO, BLOG
    */
+
+  .certifications-img {
+    border-radius: 16px;
+  }
 
   .project-img,
   .blog-banner-box {
@@ -1770,6 +1878,7 @@ textarea.form-input::-webkit-resizer {
 
   /* portfolio and blog grid */
 
+  .certifications-list,
   .project-list,
   .blog-posts-list {
     grid-template-columns: 1fr 1fr;
@@ -1883,6 +1992,10 @@ textarea.form-input::-webkit-resizer {
   /**
    * PORTFOLIO
    */
+
+  .certifications-list {
+    grid-template-columns: repeat(6, 1fr);
+  }
 
   .project-list {
     grid-template-columns: repeat(3, 1fr);
