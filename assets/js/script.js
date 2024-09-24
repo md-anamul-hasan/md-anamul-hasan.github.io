@@ -137,3 +137,34 @@ for (let i = 0; i < navigationLinks.length; i++) {
     }
   });
 }
+
+
+
+document.querySelectorAll('.testimonials-item').forEach(item => {
+  item.addEventListener('click', function() {
+    const name = item.querySelector('.testimonials-item-title').textContent;
+    const date = item.getAttribute('data-testimonial-date'); // Get the unique date
+    const formattedDate = new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric'
+    }); // Format the date to display nicely
+    const text = item.querySelector('.testimonials-text p').textContent;
+    const avatar = item.querySelector('img').src;
+
+    document.querySelector('[data-modal-title]').textContent = name;
+    document.querySelector('[data-modal-date]').textContent = formattedDate;
+    document.querySelector('[data-modal-text] p').textContent = text;
+    document.querySelector('[data-modal-img]').src = avatar;
+
+    // Open the modal
+    document.querySelector('.modal-container').classList.add('active');
+  });
+});
+
+document.querySelector('[data-modal-close-btn]').addEventListener('click', () => {
+  document.querySelector('.modal-container').classList.remove('active');
+});
+
+
+
