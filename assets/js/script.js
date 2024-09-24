@@ -138,32 +138,33 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-
 /**
  * Open the modal when a testimonial item is clicked
  * @param {Event} event The event triggered by the click
  */
-document.querySelectorAll('.testimonials-item').forEach(item => {
-  item.addEventListener('click', function(event) {
+document.querySelectorAll(".testimonials-item").forEach((item) => {
+  item.addEventListener("click", function (event) {
     const clickedItem = event.currentTarget;
-    const name = clickedItem.querySelector('.testimonials-item-title').textContent;
-    const date = clickedItem.getAttribute('data-testimonial-date'); // Get the unique date
-    const formattedDate = new Date(date).toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric'
+    const name = clickedItem.querySelector(
+      ".testimonials-item-title"
+    ).textContent;
+    const date = clickedItem.getAttribute("data-testimonial-date"); // Get the unique date
+    const formattedDate = new Date(date).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
     }); // Format the date to display nicely
-    const text = clickedItem.querySelector('.testimonials-text p').textContent;
-    const avatar = clickedItem.querySelector('img').src;
+    const text = clickedItem.querySelector(".testimonials-text p").textContent;
+    const avatar = clickedItem.querySelector("img").src;
 
     // Set the content of the modal
-    document.querySelector('[data-modal-title]').textContent = name;
-    document.querySelector('[data-modal-date]').textContent = formattedDate;
-    document.querySelector('[data-modal-text] p').textContent = text;
-    document.querySelector('[data-modal-img]').src = avatar;
+    document.querySelector("[data-modal-title]").textContent = name;
+    document.querySelector("[data-modal-date]").textContent = formattedDate;
+    document.querySelector("[data-modal-text] p").textContent = text;
+    document.querySelector("[data-modal-img]").src = avatar;
 
     // Open the modal
-    document.querySelector('.modal-container').classList.add('active');
+    document.querySelector(".modal-container").classList.add("active");
   });
 });
 
@@ -171,10 +172,9 @@ document.querySelectorAll('.testimonials-item').forEach(item => {
  * Close the modal when the close button is clicked
  * @param {Event} event The event triggered by the click
  */
-document.querySelector('[data-modal-close-btn]').addEventListener('click', function(event) {
-  // Close the modal
-  document.querySelector('.modal-container').classList.remove('active');
-});
-
-
-
+document
+  .querySelector("[data-modal-close-btn]")
+  .addEventListener("click", function (event) {
+    // Close the modal
+    document.querySelector(".modal-container").classList.remove("active");
+  });
