@@ -1,0 +1,165 @@
+{
+  "main": {
+    "id": "e06dde1763bef130",
+    "type": "split",
+    "children": [
+      {
+        "id": "f12e8e78f2e8d128",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "509e31df8c7dc834",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.7.7"
+              },
+              "icon": "lucide-file",
+              "title": "Release Notes 1.7.7"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "dc53e8c86c19dd5b",
+    "type": "split",
+    "children": [
+      {
+        "id": "34d9f924f98f7af6",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d69ae9a5b3e42464",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "1598a91e1892cf4a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "fef0c9ab4f6dd242",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "f5695b3cb7608dd2",
+    "type": "split",
+    "children": [
+      {
+        "id": "cfb88fec637908d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "31d04731980c95ba",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "pdf/Resume-Md_Anamul_Hasan.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Resume-Md_Anamul_Hasan"
+            }
+          },
+          {
+            "id": "90ba7ae041f38dc3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "pdf/Resume-Md_Anamul_Hasan.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Resume-Md_Anamul_Hasan"
+            }
+          },
+          {
+            "id": "771cc9370ff0c02b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "57193e858a7d02c7",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "pdf/Resume-Md_Anamul_Hasan.pdf"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Resume-Md_Anamul_Hasan"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "509e31df8c7dc834",
+  "lastOpenFiles": []
+}
