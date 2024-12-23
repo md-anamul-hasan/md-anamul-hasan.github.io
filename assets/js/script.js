@@ -1,111 +1,138 @@
 "use strict";
 
-const elementToggleFunc = function (e) {
-    e.classList.toggle("active");
-  },
-  sidebar = document.querySelector("[data-sidebar]"),
-  sidebarBtn = document.querySelector("[data-sidebar-btn]");
+// Toggle element's active class
+const toggleActiveClass = function (element) {
+  element.classList.toggle("active");
+};
+
+// Sidebar toggle functionality
+const sidebar = document.querySelector("[data-sidebar]");
+const sidebarBtn = document.querySelector("[data-sidebar-btn]");
 sidebarBtn.addEventListener("click", function () {
-  elementToggleFunc(sidebar);
+  toggleActiveClass(sidebar);
 });
-const testimonialsItem = document.querySelectorAll("[data-testimonials-item]"),
-  modalContainer = document.querySelector("[data-modal-container]"),
-  modalCloseBtn = document.querySelector("[data-modal-close-btn]"),
-  overlay = document.querySelector("[data-overlay]"),
-  modalImg = document.querySelector("[data-modal-img]"),
-  modalTitle = document.querySelector("[data-modal-title]"),
-  modalText = document.querySelector("[data-modal-text]"),
-  testimonialsModalFunc = function () {
-    modalContainer.classList.toggle("active"),
-      overlay.classList.toggle("active");
-  };
-for (let e = 0; e < testimonialsItem.length; e++)
-  testimonialsItem[e].addEventListener("click", function () {
-    (modalImg.src = this.querySelector("[data-testimonials-avatar]").src),
-      (modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt),
-      (modalTitle.innerHTML = this.querySelector(
-        "[data-testimonials-title]"
-      ).innerHTML),
-      (modalText.innerHTML = this.querySelector(
-        "[data-testimonials-text]"
-      ).innerHTML),
-      testimonialsModalFunc();
+
+// Testimonials modal functionality
+const testimonialsItems = document.querySelectorAll("[data-testimonials-item]");
+const modalContainer = document.querySelector("[data-modal-container]");
+const modalCloseBtn = document.querySelector("[data-modal-close-btn]");
+const overlay = document.querySelector("[data-overlay]");
+const modalImg = document.querySelector("[data-modal-img]");
+const modalTitle = document.querySelector("[data-modal-title]");
+const modalText = document.querySelector("[data-modal-text]");
+
+const toggleModal = function () {
+  toggleActiveClass(modalContainer);
+  toggleActiveClass(overlay);
+};
+
+testimonialsItems.forEach(item => {
+  item.addEventListener("click", function () {
+    modalImg.src = this.querySelector("[data-testimonials-avatar]").src;
+    modalImg.alt = this.querySelector("[data-testimonials-avatar]").alt;
+    modalTitle.innerHTML = this.querySelector("[data-testimonials-title]").innerHTML;
+    modalText.innerHTML = this.querySelector("[data-testimonials-text]").innerHTML;
+    toggleModal();
   });
-modalCloseBtn.addEventListener("click", testimonialsModalFunc),
-  overlay.addEventListener("click", testimonialsModalFunc);
-const select = document.querySelector("[data-select]"),
-  selectItems = document.querySelectorAll("[data-select-item]"),
-  selectValue = document.querySelector("[data-selecct-value]"),
-  filterBtn = document.querySelectorAll("[data-filter-btn]");
+});
+
+modalCloseBtn.addEventListener("click", toggleModal);
+overlay.addEventListener("click", toggleModal);
+
+// Select and filter functionality
+const select = document.querySelector("[data-select]");
+const selectItems = document.querySelectorAll("[data-select-item]");
+const selectValue = document.querySelector("[data-selecct-value]");
+const filterBtns = document.querySelectorAll("[data-filter-btn]");
+const filterItems = document.querySelectorAll("[data-filter-item]");
+
 select.addEventListener("click", function () {
-  elementToggleFunc(this);
+  toggleActiveClass(this);
 });
-for (let e = 0; e < selectItems.length; e++)
-  selectItems[e].addEventListener("click", function () {
-    let e = this.innerText.toLowerCase();
-    (selectValue.innerText = this.innerText),
-      elementToggleFunc(select),
-      filterFunc(e);
+
+selectItems.forEach(item => {
+  item.addEventListener("click", function () {
+    const selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    toggleActiveClass(select);
+    filterItemsByCategory(selectedValue);
   });
-const filterItems = document.querySelectorAll("[data-filter-item]"),
-  filterFunc = function (e) {
-    for (let t = 0; t < filterItems.length; t++)
-      "all" === e || e === filterItems[t].dataset.category
-        ? filterItems[t].classList.add("active")
-        : filterItems[t].classList.remove("active");
-  };
-let lastClickedBtn = filterBtn[0];
-for (let e = 0; e < filterBtn.length; e++)
-  filterBtn[e].addEventListener("click", function () {
-    let e = this.innerText.toLowerCase();
-    (selectValue.innerText = this.innerText),
-      filterFunc(e),
-      lastClickedBtn.classList.remove("active"),
-      this.classList.add("active"),
-      (lastClickedBtn = this);
+});
+
+const filterItemsByCategory = function (category) {
+  filterItems.forEach(item => {
+    if (category === "all" || category === item.dataset.category) {
+      item.classList.add("active");
+    } else {
+      item.classList.remove("active");
+    }
   });
-const form = document.querySelector("[data-form]"),
-  formInputs = document.querySelectorAll("[data-form-input]"),
-  formBtn = document.querySelector("[data-form-btn]");
-for (let e = 0; e < formInputs.length; e++)
-  formInputs[e].addEventListener("input", function () {
-    form.checkValidity()
-      ? formBtn.removeAttribute("disabled")
-      : formBtn.setAttribute("disabled", "");
+};
+
+let lastClickedBtn = filterBtns[0];
+filterBtns.forEach(btn => {
+  btn.addEventListener("click", function () {
+    const selectedValue = this.innerText.toLowerCase();
+    selectValue.innerText = this.innerText;
+    filterItemsByCategory(selectedValue);
+    lastClickedBtn.classList.remove("active");
+    this.classList.add("active");
+    lastClickedBtn = this;
   });
-const navigationLinks = document.querySelectorAll("[data-nav-link]"),
-  pages = document.querySelectorAll("[data-page]");
-for (let e = 0; e < navigationLinks.length; e++)
-  navigationLinks[e].addEventListener("click", function () {
-    for (let e = 0; e < pages.length; e++)
-      this.innerHTML.toLowerCase() === pages[e].dataset.page
-        ? (pages[e].classList.add("active"),
-          navigationLinks[e].classList.add("active"),
-          window.scrollTo(0, 0))
-        : (pages[e].classList.remove("active"),
-          navigationLinks[e].classList.remove("active"));
+});
+
+// Form validation functionality
+const form = document.querySelector("[data-form]");
+const formInputs = document.querySelectorAll("[data-form-input]");
+const formBtn = document.querySelector("[data-form-btn]");
+
+formInputs.forEach(input => {
+  input.addEventListener("input", function () {
+    form.checkValidity() ? formBtn.removeAttribute("disabled") : formBtn.setAttribute("disabled", "");
   });
-document.querySelectorAll(".testimonials-item").forEach((e) => {
-  e.addEventListener("click", function (e) {
-    const t = e.currentTarget,
-      a = t.querySelector(".testimonials-item-title").textContent,
-      n = t.getAttribute("data-testimonial-date"),
-      l = new Date(n).toLocaleDateString("en-US", {
-        year: "numeric",
-        month: "long",
-        day: "numeric",
-      }),
-      o = t.querySelector(".testimonials-text p").textContent,
-      i = t.querySelector("img").src;
-    (document.querySelector("[data-modal-title]").textContent = a),
-      (document.querySelector("[data-modal-date]").textContent = l),
-      (document.querySelector("[data-modal-text] p").textContent = o),
-      (document.querySelector("[data-modal-img]").src = i),
-      document.querySelector(".modal-container").classList.add("active");
-  });
-}),
-  document
-    .querySelector("[data-modal-close-btn]")
-    .addEventListener("click", function (e) {
-      document.querySelector(".modal-container").classList.remove("active");
+});
+
+// Navigation functionality
+const navigationLinks = document.querySelectorAll("[data-nav-link]");
+const pages = document.querySelectorAll("[data-page]");
+
+navigationLinks.forEach(link => {
+  link.addEventListener("click", function () {
+    const targetPage = this.innerHTML.toLowerCase();
+    pages.forEach(page => {
+      if (targetPage === page.dataset.page) {
+        page.classList.add("active");
+        link.classList.add("active");
+        window.scrollTo(0, 0);
+      } else {
+        page.classList.remove("active");
+        link.classList.remove("active");
+      }
     });
+  });
+});
+
+// Additional testimonials modal functionality
+document.querySelectorAll(".testimonials-item").forEach(item => {
+  item.addEventListener("click", function (event) {
+    const currentItem = event.currentTarget;
+    const title = currentItem.querySelector(".testimonials-item-title").textContent;
+    const date = new Date(currentItem.getAttribute("data-testimonial-date")).toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "long",
+      day: "numeric",
+    });
+    const text = currentItem.querySelector(".testimonials-text p").textContent;
+    const imgSrc = currentItem.querySelector("img").src;
+
+    document.querySelector("[data-modal-title]").textContent = title;
+    document.querySelector("[data-modal-date]").textContent = date;
+    document.querySelector("[data-modal-text] p").textContent = text;
+    document.querySelector("[data-modal-img]").src = imgSrc;
+    document.querySelector(".modal-container").classList.add("active");
+  });
+});
+
+document.querySelector("[data-modal-close-btn]").addEventListener("click", function () {
+  document.querySelector(".modal-container").classList.remove("active");
+});
