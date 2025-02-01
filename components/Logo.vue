@@ -1,0 +1,46 @@
+<template>
+  <!-- Logo component with link to homepage -->
+  <a class="block text-teal-600" :href="href">
+    <!-- SVG logo icon -->
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 24 24"
+      fill="currentColor"
+      :class="[ props.size,
+        // Set logo colors based on light/dark mode
+        'fill-teal-600',
+        // Set hover color based on light/dark mode
+        'hover:fill-gray-600',
+      ]"
+    >
+      <g>
+        <circle fill="none" cx="12" cy="12" r="11.2" />
+        <g>
+          <g>
+            <polygon points="9.2,6.4 9.2,18.3 8.1,16.4 8.1,7.6 7,7.6 7,14.5 5.9,12.5 5.9,7.6 4.3,7.6 4.9,8.7 4.9,10.9 2.3,6.4" />
+            <path d="M12.9,13.3h-1.9v8.2L10,19.6V6.4H14v13.2l-1.1,1.9V13.3z M11.1,12h1.9V7.5h-1.9V12L11.1,12z" />
+            <polygon points="15.9,10.1 18.2,10.1 17,12.3 17,14.5 21.7,6.4 20.4,6.4 18.9,9 15.9,9 15.9,6.4 14.8,6.4 14.8,18.3 15.9,16.4" />
+          </g>
+          <path d="M12.5,22c-0.2,0-0.4,0-0.5,0c-0.2,0-0.4,0-0.5,0c-0.1,0-0.1,0-0.2,0l0.7,1.2L12.5,22C12.6,22,12.6,22,12.5,22z" />
+        </g>
+      </g>
+    </svg>
+  </a>
+</template>
+
+<script setup>
+import { computed } from "vue";
+
+const props = defineProps({
+  // Size of logo (width and height)
+  size: {
+    type: String,
+    default: "w-8 h-8", // Default size
+  },
+  // Link for logo
+  href: {
+    type: String,
+    default: "/", // Default link
+  },
+});
+</script>
