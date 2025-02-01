@@ -2,63 +2,21 @@
   <!-- Footer Section -->
   <section class="text-gray-700 bg-white body-font">
     <!-- Divider with gradient effect -->
-    <span class="relative flex justify-center">
-      <div
-        class="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75"
-      ></div>
-
-      <span class="relative z-10 bg-white px-6"></span>
-    </span>
+    <Divider />
 
     <!-- Content area -->
     <div
       class="container flex flex-col items-center px-8 py-2 mx-auto max-w-7xl sm:flex-row"
     >
       <!-- Logo with link -->
-      <a class="block text-teal-600" href="/">
-        <span class="sr-only">Home</span>
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          class="w-8 h-8 fill-teal-600 dark:fill-teal-300 hover:fill-gray-600 hover:dark:fill-gray-300"
-        >
-          <g>
-            <polygon
-              points="4.4,7.9 4.4,5.5 3.7,4.2 5.4,4.2 5.4,9.6 6.6,11.6 6.6,4.2 7.8,4.2 7.8,13.7 9,15.8 9,3 1.6,3"
-            />
-            <path
-              d="M9.8,17.2l1.2,2.1v-8.8h2v8.8l1.2-2.1V3H9.8V17.2z M11,4.2h2V9h-2V4.2z"
-            />
-            <polygon
-              points="17.4,11.6 22.4,3 21,3 19.4,5.8 16.2,5.8 16.2,3 15,3 15,15.8 16.2,13.7 16.2,7 18.7,7 17.4,9.3"
-            />
-            <path d="M12,21l0.7-1.3c0,0-1.4,0-1.4,0L12,21z" />
-          </g>
-        </svg>
-      </a>
+      <Logo size="h-8 w-8" href="/" />
 
       <!-- Copyright and privacy policy links -->
-      <p
-        class="mt-4 text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
-      >
-        &copy; {{ currentYear }} &nbsp;
-        <b> Md Anamul Hasan</b>&nbsp;&nbsp;&nbsp;&nbsp; All rights reserved.
-      </p>
+      <Copyright />
 
-      <a
-        class="mt-4 text-sm text-gray-500 hover:text-blue-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
-        href="/privacy-policy"
-      >
-        Privacy Policy.
-      </a>
-
-      <a
-        class="mt-4 text-sm text-gray-500 hover:text-blue-500 sm:ml-4 sm:pl-4 sm:border-l sm:border-gray-200 sm:mt-0"
-        href="/faq"
-      >
-        FAQs.
-      </a>
+      <FooterLinks text="Terms of Service" href="/terms-of-service" />
+      <FooterLinks text="Privacy Policy" href="/privacy-policy" />
+      <FooterLinks text="FAQs" href="/faq" />
 
       <!-- Social media links -->
       <span
@@ -206,22 +164,10 @@
   </section>
 </template>
 
-<script>
-/**
- * Footer component
- *
- * @copyright 2025 Md. Anamul Hasan
- * @license MIT
- */
-export default {
-  data() {
-    return {
-      /**
-       * The current year
-       * @type {number}
-       */
-      currentYear: new Date().getFullYear(),
-    };
-  },
-};
+<script setup>
+// Import the components
+import Divider from "~/components/Divider.vue";
+import Logo from "~/components/Logo.vue";
+import Copyright from "~/components/Footer/Copyright.vue";
+
 </script>
