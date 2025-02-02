@@ -33,4 +33,3 @@ const buttonClass = ref(
   "inline-block rounded-full border border-teal-600 bg-teal-600 px-12 py-3 text-sm font-medium text-white hover:bg-transparent hover:text-teal-600 focus:outline-none focus:ring active:text-indigo-500"
 );
 </script>
-
