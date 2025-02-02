@@ -17,14 +17,7 @@
         class="flex-1 md:flex md:items-center md:gap-12 items-center justify-between"
       >
         <Logo size="h-12 w-12" harf="/" />
-        <button
-          type="button"
-          class="-m-2.5 rounded-md p-2.5 text-gray-700"
-          @click="mobileMenuOpen = false"
-        >
-          <span class="sr-only">Close menu</span>
-          <XMarkIcon class="h-6 w-6" aria-hidden="true" />
-        </button>
+        <CloseButton @click="mobileMenuOpen = false" />
       </div>
       <Divider />
 
@@ -50,6 +43,7 @@
 <script setup>
 import { ref } from "vue";
 import Logo from "~/components/Logo.vue";
+import CloseButton from "~/components/Buttons/CloseButton.vue";
 
 // State to control the mobile menu
 const mobileMenuOpen = ref(false);

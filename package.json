@@ -9,7 +9,6 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "postgenerate": "echo. > dist/.nojekyll"
-
   },
   "dependencies": {
     "@headlessui/vue": "^1.7.23",

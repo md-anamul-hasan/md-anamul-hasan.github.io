@@ -25,4 +25,3 @@ export default {
 <style scoped>
 /* Styles specific to this component */
 </style>
-

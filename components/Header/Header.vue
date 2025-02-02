@@ -46,17 +46,7 @@ import NavLinks from "~/components/Header/NavLinks.vue";
 import DownloadButton from "~/components/Buttons/DownloadButton.vue";
 import ToggleMobileMenu from "~/components/MobileMenu/ToggleMobileMenu.vue";
 import Divider from "~/components/Divider.vue";
-import MobileMenuDialog from "../MobileMenu/MobileMenuDialog.vue";
-
-// Navigation items for the main menu
-const navigation = [
-  { name: "About Me", href: "/about" },
-  { name: "Resume", href: "/resume" },
-  { name: "Portfolio", href: "/portfolio" },
-  { name: "Projects", href: "/project" },
-  { name: "Blog", href: "/blog" },
-  { name: "Contact", href: "/contact" },
-];
+import MobileMenuDialog from "~/components/MobileMenu/MobileMenuDialog.vue";
 
 // Whether the mobile menu is currently open
 const mobileMenuOpen = ref(false);
@@ -66,4 +56,3 @@ const buttonText = ref("Download My CV");
 const downloadLink = ref("https://drive.usercontent.google.com/download?id=1-Jj0JdfWpCR8HXuozROBbZOJfJC3Fcln&export=download&authuser=0");
 const fileName = ref("Resume-Md_Anamul_Hasan.pdf");
 </script>
-

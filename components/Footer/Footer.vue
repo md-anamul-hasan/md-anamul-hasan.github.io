@@ -13,7 +13,6 @@
 
       <!-- Copyright and privacy policy links -->
       <Copyright />
-
       <FooterLinks text="Terms of Service" href="/terms-of-service" />
       <FooterLinks text="Privacy Policy" href="/privacy-policy" />
       <FooterLinks text="FAQs" href="/faq" />
