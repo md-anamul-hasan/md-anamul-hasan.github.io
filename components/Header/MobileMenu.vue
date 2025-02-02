@@ -56,11 +56,11 @@ const mobileMenuOpen = ref(false);
 
 // Array of navigation items
 const navigation = [
-  { name: "About Me", href: "/" },
-  { name: "Resume", href: "/" },
-  { name: "Portfolio", href: "/" },
-  { name: "Projects", href: "/" },
-  { name: "Blog", href: "/" },
-  { name: "Contact", href: "/" },
+  { name: "About Me", href: "/about" },
+  { name: "Resume", href: "/resume" },
+  { name: "Portfolio", href: "/portfolio" },
+  { name: "Projects", href: "/project" },
+  { name: "Blog", href: "/blog" },
+  { name: "Contact", href: "/contact" },
 ];
 </script>
